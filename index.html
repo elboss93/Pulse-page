@@ -4,17 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Pulse page</title>
   </head>
-  <body>
-    <header>
-      <div class="container-header">
-        <h1>Pulse</h1>
-        <button>Features</button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+  <body class="m-0 p-0 bg-white">
+    <header
+      class="w-full flex items-center justify-between py-10 px-6"
+      style="background-color: #eafaf1"
+      ;
+    >
+      <div class="header-left">
+        <img
+          src="https://pulseapp.com/img/pulse-logo.svg"
+          alt="Pulse Logo"
+          aria-hidden="true"
+        />
+      </div>
+      <div class="header-right">
+        <button>Fefqqqqqure</button>
+        <button>customer Stories</button>
+        <button>Pircing</button>
+        <button>Blog</button>
+        <button>Sign Up</button>
       </div>
     </header>
 
@@ -25,42 +36,98 @@
         <p>See why Pulse is the best way to monitor your cash flow.</p>
         <p>Sign up for any plan and try Pulse absolutely free for 30 days.</p>
       </section>
-      <!-- Section 2 Pulse Basic-->
+      <!-- Section 2 Pricing-->
       <section>
-        <h2>
-          These are what we call the Pulse Basics. They’re what every customer
-          gets.
-        </h2>
-        <ul>
-          <li>Manage cash flow on a daily, weekly, monthly, or yearly basis</li>
-          <li>
-            Forecast growth with recurring income or expenses that scale
-            automatically
-          </li>
-          <li>Works with any currency</li>
-          <li>
-            See Money In and Money Out, categorize transactions, and run helpful
-            reports
-          </li>
-          <li>
-            Toggle entries and accounts on and off to game out different
-            scenarios
-          </li>
-        </ul>
-        <p>Just need the Pulse Basics?</p>
-        <p>Get them now for $29 per month.</p>
-      </section>
-      <!-- Section 3 Pricing-->
-      <!--Card Basic-->
-      <!--Card Small Buisness-->
-      <!--CArd Premium-->
-      <section>
-        <article></article>
-        <article></article>
-        <article></article>
+        <!--Card Basic-->
+        <article>
+          <h3>
+            These are what we call the Pulse Basics. They’re what every customer
+            gets.
+          </h3>
+          <ul>
+            <li>
+              Manage cash flow on a daily, weekly, monthly, or yearly basis
+            </li>
+            <li>
+              Forecast growth with recurring income or expenses that scale
+              automatically
+            </li>
+            <li>Works with any currency</li>
+            <li>
+              See Money In and Money Out, categorize transactions, and run
+              helpful reports
+            </li>
+            <li>
+              Toggle entries and accounts on and off to game out different
+              scenarios
+            </li>
+          </ul>
+          <p>Just need the Pulse Basics?</p>
+          <p>Get them now for $29 per month.</p>
+        </article>
+        <!--Card Small Buisness-->
+        <article class="pricing-card">
+          <!-- Empfehlungs-Label oben -->
+          <div class="badge">RECOMMENDED</div>
+
+          <!-- Plan-Titel + Preis -->
+          <header>
+            <h3 class="plan-title">Small Business Plan</h3>
+            <p class="plan-price">$59 per month</p>
+          </header>
+
+          <!-- Call to Action Button -->
+          <a href="#signup" class="btn-signup">Sign Up Now</a>
+
+          <!-- Beschreibung -->
+          <section class="plan-details">
+            <h4>You get Pulse Basics, plus:</h4>
+            <ul>
+              <li>✔️ Manage cash flow across multiple financial accounts</li>
+              <li>✔️ Invite your investors, book keeper, or management team</li>
+              <li>✔️ Integrate with QuickBooks Online</li>
+              <li>✔️ Track your actual cash flow alongside projections</li>
+            </ul>
+          </section>
+        </article>
+        <!--Card Premium-->
+        <article class="pricing-card premium">
+          <!-- Grauer Infobalken ganz oben -->
+          <p class="plan-note">
+            Complex business with multiple financial accounts, currencies, or
+            auditing needs?
+          </p>
+
+          <!-- Plan-Titel + Preis -->
+          <header>
+            <h3 class="plan-title">Unlock Extra Features</h3>
+            <p class="plan-price">$89 per month</p>
+          </header>
+
+          <!-- Call-to-Action -->
+          <a href="#signup-premium" class="btn-cta">Try Premium</a>
+
+          <!-- Feature-Liste -->
+          <section class="plan-details">
+            <h4>Get it all, plus:</h4>
+            <ul>
+              <li>
+                ✔️ Manage cash flow across
+                <strong>unlimited</strong> financial accounts
+              </li>
+              <li>
+                ✔️ Convert to any currency for localised reports & projections
+              </li>
+              <li>
+                ✔️ Attach invoices or contracts for accountability & auditing
+              </li>
+            </ul>
+          </section>
+        </article>
       </section>
     </main>
 
+    <footer></footer>
     <footer></footer>
   </body>
 </html>
