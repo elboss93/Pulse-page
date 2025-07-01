@@ -21,8 +21,7 @@
         />
       </div>
       <div class="flex justify-between text-xl" class="header-right">
-
-  <button class="p-5">Features</button>
+        <button class="p-5">Features</button>
 
         <button class="p-5">customer Stories</button>
         <button class="p-5">Pircing</button>
@@ -32,100 +31,151 @@
     </header>
 
     <main>
-      <!-- Section 1 HERO-->
-      <section>
-        <h1>Try Pulse free for 30 days</h1>
-        <p>See why Pulse is the best way to monitor your cash flow.</p>
-        <p>Sign up for any plan and try Pulse absolutely free for 30 days.</p>
-      </section>
-      <!-- Section 2 Pricing-->
-      <section>
-        <!--Card Basic-->
-        <article>
-          <h3>
-            These are what we call the Pulse Basics. They’re what every customer
-            gets.
-          </h3>
-          <ul>
-            <li>
-              Manage cash flow on a daily, weekly, monthly, or yearly basis
-            </li>
-            <li>
-              Forecast growth with recurring income or expenses that scale
-              automatically
-            </li>
-            <li>Works with any currency</li>
-            <li>
-              See Money In and Money Out, categorize transactions, and run
-              helpful reports
-            </li>
-            <li>
-              Toggle entries and accounts on and off to game out different
-              scenarios
-            </li>
-          </ul>
-          <p>Just need the Pulse Basics?</p>
-          <p>Get them now for $29 per month.</p>
-        </article>
-        <!--Card Small Buisness-->
-        <article class="pricing-card">
-          <!-- Empfehlungs-Label oben -->
-          <div class="badge">RECOMMENDED</div>
+      <!-- Pricing Section -->
+      <section class="bg-[#E8F8F4] py-20">
+        <div class="mx-auto max-w-7xl px-4">
+          <!-- 3-Spalten-Grid – auf Mobil 1 Spalte, ab md 3 -->
+          <div class="grid gap-1 md:grid-cols-4">
+            <!-- Column 1: Pulse Basics -->
+            <article class="text-slate-900 leading-relaxed">
+              <h3 class="text-green-700 mb-4 text-lg font-bold">
+                These are what we call the Pulse Basics. They’re what every
+                customer gets.
+              </h3>
 
-          <!-- Plan-Titel + Preis -->
-          <header>
-            <h3 class="plan-title">Small Business Plan</h3>
-            <p class="plan-price">$59 per month</p>
-          </header>
+              <ul class="list-disc list-inside space-y-2 text-sm">
+                <li>
+                  Manage cash flow on a daily, weekly, monthly, or yearly basis
+                </li>
+                <li>
+                  Forecast growth with recurring income or expenses that scale
+                  automatically
+                </li>
+                <li>Works with any currency</li>
+                <li>
+                  See Money In and Money Out, categorize transactions, and run
+                  helpful reports
+                </li>
+                <li>
+                  Toggle entries and accounts on and off to game out different
+                  scenarios
+                </li>
+              </ul>
 
-          <!-- Call to Action Button -->
-          <a href="#signup" class="btn-signup">Sign Up Now</a>
+              <p class="mt-6 text-sm">
+                Just need the Pulse Basics?<br />
+                <a href="#"
+                  ><span class="text-green-700 underline">Get them now</span>
+                  for $29 per month.</a
+                >
+              </p>
+            </article>
 
-          <!-- Beschreibung -->
-          <section class="plan-details">
-            <h4>You get Pulse Basics, plus:</h4>
-            <ul>
-              <li>✔️ Manage cash flow across multiple financial accounts</li>
-              <li>✔️ Invite your investors, book keeper, or management team</li>
-              <li>✔️ Integrate with QuickBooks Online</li>
-              <li>✔️ Track your actual cash flow alongside projections</li>
-            </ul>
-          </section>
-        </article>
-        <!--Card Premium-->
-        <article class="pricing-card premium">
-          <!-- Grauer Infobalken ganz oben -->
-          <p class="plan-note">
-            Complex business with multiple financial accounts, currencies, or
-            auditing needs?
-          </p>
+            <!-- Column 2: Small Business Plan (Recommended) -->
+            <article
+              class="relative flex flex-col items-center rounded-lg bg-white p-8 text-center shadow-lg"
+            >
+              <!-- Badge -->
+              <span
+                class="absolute -top-4 rounded bg-green-700 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-white"
+              >
+                Recommended
+              </span>
 
-          <!-- Plan-Titel + Preis -->
-          <header>
-            <h3 class="plan-title">Unlock Extra Features</h3>
-            <p class="plan-price">$89 per month</p>
-          </header>
+              <h3 class="mt-4 text-3xl font-bold text-green-700">
+                Small Business Plan
+              </h3>
+              <p class="mt-2 mb-6">
+                <span class="text-2xl font-semibold">$59</span>
+                <span class="text-sm text-slate-500">per month</span>
+              </p>
 
-          <!-- Call-to-Action -->
-          <a href="#signup-premium" class="btn-cta">Try Premium</a>
+              <a
+                href="#"
+                class="rounded bg-green-700 px-6 py-3 font-semibold text-white"
+              >
+                Sign Up Now
+              </a>
 
-          <!-- Feature-Liste -->
-          <section class="plan-details">
-            <h4>Get it all, plus:</h4>
-            <ul>
-              <li>
-                ✔️ Manage cash flow across
-                <strong>unlimited</strong> financial accounts
-              </li>
-              <li>
-                ✔️ Convert to any currency for localised reports & projections
-              </li>
-              <li>
-                ✔️ Attach invoices or contracts for accountability &auditing
-              </li>
-            </ul>
-          </section>
-        </article>
+              <h4
+                class="mt-8 mb-4 text-xs font-semibold tracking-widest text-slate-700"
+              >
+                YOU GET PULSE BASICS, PLUS:
+              </h4>
+              <ul class="list- list-inside space-y-2 text-sm text-left">
+                <li>Manage cash flow across multiple financial accounts</li>
+                <li>
+                  Invite your investors, book keeper, or management team to see
+                  reports or manage cash flow
+                </li>
+                <li>
+                  Integrate with QuickBooks Online for more accurate cash flow
+                </li>
+                <li>
+                  Track your actual cash flow alongside your projected cash flow
+                </li>
+              </ul>
+            </article>
+
+            <!-- Column 3: Unlock Extra Features -->
+            <article
+              class="flex flex-col items-center rounded-lg border border-slate-300 bg-white p-8 text-center"
+            >
+              <h3 class="text-xl font-bold text-green-700">
+                Unlock Extra Features
+              </h3>
+              <p class="mt-2 mb-6">
+                <span class="text-2xl font-semibold">$89</span>
+                <span class="text-sm text-slate-500">per month</span>
+              </p>
+
+              <a
+                href="#"
+                class="rounde bg-green-700 px-6 py-3 font-semibold text-white"
+              >
+                Try Premium
+              </a>
+
+              <h4
+                class="mt-8 mb-4 text-xs font-semibold tracking-widest text-slate-700"
+              >
+                GET IT ALL, PLUS:
+              </h4>
+              <ul class="list-disc list-inside space-y-2 text-sm text-left">
+                <li>Manage cash flow across unlimited financial accounts</li>
+                <li>
+                  Convert to any currency for localized cash-flow reporting and
+                  projections
+                </li>
+                <li>
+                  Attach invoices or contracts to your cash-flow entries for
+                  accountability and auditing
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <!-- Testimonial (optional, unter Grid) -->
+          <div class="mx-auto mt-20 max-w-2xl text-center">
+            <div class="mx-auto mb-6 h-16 w-16">
+              <!-- Ersetze src durch dein Logo-Asset -->
+              <img
+                src="https://pulseapp.com/img/subvert-avatar.png"
+                alt="Pulse logo"
+                class="h-full w-full object-contain"
+              />
+            </div>
+            <blockquote class="text-lg italic text-slate-700">
+              “Pulse is worth every penny because it empowers business owners
+              with critical financial insight and knowledge.”
+            </blockquote>
+            <cite
+              class="mt-4 block text-xs font-semibold uppercase tracking-widest text-green-700"
+            >
+              Subvert Marketing, Inc.
+            </cite>
+          </div>
+        </div>
       </section>
     </main>
 
