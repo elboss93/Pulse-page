@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en" class="h-full">
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<<<<<<< HEAD
     <link rel="stylesheet" href="style.css" />
-=======
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    
     <script>
     tailwind.config = {
     theme: {
@@ -27,17 +28,15 @@
       }
     }
   }
-</script>
+    </script>
       
->>>>>>> 6051a00 (main senden)
     <title>Pulse page</title>
+
   </head>
-  <body class="m-0 p-0 bg-white">
-    <header
-      class="w-full flex items-center justify-between py-10 px-6"
-      style="background-color: #eafaf1"
-      ;
-    >
+
+  <body class="min-h-screen h-full w-full m-0 p-0 bg-white flex flex-col">
+
+    <header class="w-full bg-[#eafaf1] flex items-center justify-between py-10 px-6">
       <div class="header-left">
         <img
           src="https://pulseapp.com/img/pulse-logo.svg"
@@ -56,38 +55,13 @@
       </div>
     </header>
 
-    <main></main>
+<main class="w-full grow">
 
-    <footer class="w-full fixed bottom-0 bg-black py-8">
-      <div class="flex flex-col md:flex-row justify-between items-start px-8">
-        <!-- Footer Logo -->
-        <div class="mb-4 md:mb-0">
-          <img
-            src="https://pulseapp.com/img/pulse-logo.svg"
-            alt="Pulse Logo"
-            class="h-10"
-          />
-        </div>
+  <section class="w-full bg-[#fcfcfc] py-16 px-4 sm:px-6 lg:px-8 font-sans">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-800 text-left mb-12">FAQ</h2>
 
-<<<<<<< HEAD
-        <!-- Sign up Button -->
-        <div class="mb-4 md:mb-0">
-          <button
-            class="bg-green-300 text-black font-semibold py-2 px-4 rounded"
-          >
-            Sign up for a Free 30-Day Trial
-          </button>
-        </div>
-=======
-  
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-<section class="bg-[#fcfcfc] py-16 px-4 sm:px-6 lg:px-8 font-sans">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-gray-800 text-left mb-12">FAQ</h2>
-
-    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:grid-rows-3">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:grid-rows-3">
       
       
       <div class="opacity-0 animate-fadeInUp">
@@ -130,11 +104,33 @@
     </div>
   </div>
 </section>
+</main>
+
+    <footer class="w-full fixed bottom-0 bg-black py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start px-8">
+        <!-- Footer Logo -->
+        <div class="mb-4 md:mb-0">
+          <img
+            src="https://pulseapp.com/img/pulse-logo.svg"
+            alt="Pulse Logo"
+            class="h-10"
+          />
+        </div>
+
+        <!-- Sign up Button -->
+        <div class="mb-4 md:mb-0">
+          <button
+            class="bg-green-300 text-black font-semibold py-2 px-4 rounded"
+          >
+            Sign up for a Free 30-Day Trial
+          </button>
+        </div>
+  
 
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  </main>
->>>>>>> 6051a00 (main senden)
+
 
         <!-- Footer Links -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
