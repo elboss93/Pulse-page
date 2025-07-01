@@ -32,25 +32,41 @@
     <title>Pulse page</title>
   </head>
 
-  <body class="min-h-screen h-full w-full m-0 p-0 bg-white flex flex-col">
-    <header
-      class="w-full bg-[#eafaf1] flex items-center justify-between py-10 px-6"
-    >
-      <div class="header-left">
-        <img
-          src="https://pulseapp.com/img/pulse-logo.svg"
-          alt="Pulse Logo"
-          aria-hidden="true"
-        />
-      </div>
-      <div class="flex justify-between text-xl" class="header-right">
-        <button class="p-5">Features</button>
+  <body class="m-0 p-0 bg-white">
+    <header>
 
-        <button class="p-5">customer Stories</button>
-        <button class="p-5">Pircing</button>
-        <button class="p-5">Blog</button>
-        <button class="p-5">Sign Up</button>
-      </div>
+       <section  
+       class="w-full flex flex-col lg:flex-row items-stretc justify-between py-6 px-6 bg-[#eafaf1]">
+    <!-- Logo -->
+    <div class="mb-4 lg:mb-0"> 
+        <a href="https://pulseapp.com/">
+      <img 
+        src="https://pulseapp.com/img/pulse-logo.svg"
+        alt="Pulse Logo"
+        class="h-20"
+      />
+      </a>
+    </div>
+
+    <!-- Menu -->
+    <nav class="flex items-center flex-w# flex-col lg:flex-row lg:space-x-6 space-y-2 lg:space-y-0">
+      <a href="https://pulseapp.com/features" class="text-[#00ad6a] font-bold  text-2xl px-4 py-2 rounded hover:text-black transition-colors">Features</a>
+      <a href="https://pulseapp.com/customer-stories" class="text-[#00ad6a] font-bold  text-2xl px-4 py-2 rounded hover:text-black transition-colors">Customer Stories</a>
+      <a href="https://pulseapp.com/pricing" class="text-[#00ad6a] font-bold  text-2xl px-4 py-2 rounded hover:text-black transition-colors">Pricing</a>
+      <a href="https://pulseapp.com/blog" class="text-[#00ad6a] text-2xl font-bold px-4 py-2 rounded hover:text-black transition-colors">Blog</a>
+      <a href="https://signup.pulseapp.com/plus" class="text-[#00ad6a] text-2xl font-bold  px-4 py-2 rounded border-3  border-[#00ad6a] hover:text-black transition-colors
+            lg:inline-block ">Sign Up</a>
+    </nav>
+      </section>
+<section class="px-6 py-12  bg-[#eafaf1]">
+    <h1 class="text-6xl font-bold text-center mb-4">Try Pulse free for </h1>
+    <h2 class="font-bold text-6xl text-center mb-6"> 30 days </h2>
+    <p class="text-center max-w-xl mx-auto text-gray-800 text-xl">
+      See why Pulse is the best way to monitor your cash flow. Sign up for any plan and try Pulse absolutely free for 30 days.
+    </p>
+  </section>
+  
+
     </header>
 
     <main class="w-full grow">
