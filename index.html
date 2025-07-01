@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en" class="h-full">
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    
+    <script>
+    tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        },
+        keyframes: {
+          fadeInUp: {
+            '0%': { opacity: '0', transform: 'translateY(20px)' },
+            '100%': { opacity: '1', transform: 'translateY(0)' },
+          }
+        },
+        animation: {
+          fadeInUp: 'fadeInUp 0.6s ease-out forwards',
+        }
+      }
+    }
+  }
+    </script>
+      
     <title>Pulse page</title>
+
   </head>
-  <body class="m-0 p-0 bg-white">
-    <header
-      class="w-full flex items-center justify-between py-10 px-6"
-      style="background-color: #eafaf1"
-      ;
-    >
+
+  <body class="min-h-screen h-full w-full m-0 p-0 bg-white flex flex-col">
+
+    <header class="w-full bg-[#eafaf1] flex items-center justify-between py-10 px-6">
       <div class="header-left">
         <img
           src="https://pulseapp.com/img/pulse-logo.svg"
@@ -21,7 +45,8 @@
         />
       </div>
       <div class="flex justify-between text-xl" class="header-right">
-        <button class="p-5">Features</button>
+
+  <button class="p-5">Features</button>
 
         <button class="p-5">customer Stories</button>
         <button class="p-5">Pircing</button>
@@ -30,153 +55,224 @@
       </div>
     </header>
 
-    <main>
-      <!-- Pricing Section -->
-      <section class="bg-[#E8F8F4] py-20">
-        <div class="mx-auto max-w-7xl px-4">
-          <!-- 3-Spalten-Grid – auf Mobil 1 Spalte, ab md 3 -->
-          <div class="grid gap-1 md:grid-cols-4">
-            <!-- Column 1: Pulse Basics -->
-            <article class="text-slate-900 leading-relaxed">
-              <h3 class="text-green-700 mb-4 text-lg font-bold">
-                These are what we call the Pulse Basics. They’re what every
-                customer gets.
-              </h3>
+<main>
+<!-- Pricing Section -->
+<section class="w-full bg-[#E8F8F4] py-20">
+  <div class="mx-auto max-w-7xl px-4">
+    <!-- 3-Spalten-Grid – auf Mobil 1 Spalte, ab md 3 -->
+    <div class="grid gap-1 md:grid-cols-4">
+      <!-- Column 1: Pulse Basics -->
+      <article class="text-slate-900 leading-relaxed">
+        <h3 class="text-green-700 mb-4 text-lg font-bold">
+          These are what we call the Pulse Basics. They’re what every
+          customer gets.
+        </h3>
 
-              <ul class="list-disc list-inside space-y-2 text-sm">
-                <li>
-                  Manage cash flow on a daily, weekly, monthly, or yearly basis
-                </li>
-                <li>
-                  Forecast growth with recurring income or expenses that scale
-                  automatically
-                </li>
-                <li>Works with any currency</li>
-                <li>
-                  See Money In and Money Out, categorize transactions, and run
-                  helpful reports
-                </li>
-                <li>
-                  Toggle entries and accounts on and off to game out different
-                  scenarios
-                </li>
-              </ul>
+        <ul class="list-disc list-inside space-y-2 text-sm">
+          <li>
+            Manage cash flow on a daily, weekly, monthly, or yearly basis
+          </li>
+          <li>
+            Forecast growth with recurring income or expenses that scale
+            automatically
+          </li>
+          <li>Works with any currency</li>
+          <li>
+            See Money In and Money Out, categorize transactions, and run
+            helpful reports
+          </li>
+          <li>
+            Toggle entries and accounts on and off to game out different
+            scenarios
+          </li>
+        </ul>
 
-              <p class="mt-6 text-sm">
-                Just need the Pulse Basics?<br />
-                <a href="#"
-                  ><span class="text-green-700 underline">Get them now</span>
-                  for $29 per month.</a
-                >
-              </p>
-            </article>
+        <p class="mt-6 text-sm">
+          Just need the Pulse Basics?<br />
+          <a href="#"
+            ><span class="text-green-700 underline">Get them now</span>
+            for $29 per month.</a
+          >
+        </p>
+      </article>
 
-            <!-- Column 2: Small Business Plan (Recommended) -->
-            <article
-              class="relative flex flex-col items-center rounded-lg bg-white p-8 text-center shadow-lg"
-            >
-              <!-- Badge -->
-              <span
-                class="absolute -top-4 rounded bg-green-700 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-white"
-              >
-                Recommended
-              </span>
+      <!-- Column 2: Small Business Plan (Recommended) -->
+      <article
+        class="relative flex flex-col items-center rounded-lg bg-white p-8 text-center shadow-lg"
+      >
+        <!-- Badge -->
+        <span
+          class="absolute -top-4 rounded bg-green-700 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-white"
+        >
+          Recommended
+        </span>
 
-              <h3 class="mt-4 text-3xl font-bold text-green-700">
-                Small Business Plan
-              </h3>
-              <p class="mt-2 mb-6">
-                <span class="text-2xl font-semibold">$59</span>
-                <span class="text-sm text-slate-500">per month</span>
-              </p>
+        <h3 class="mt-4 text-3xl font-bold text-green-700">
+          Small Business Plan
+        </h3>
+        <p class="mt-2 mb-6">
+          <span class="text-2xl font-semibold">$59</span>
+          <span class="text-sm text-slate-500">per month</span>
+        </p>
 
-              <a
-                href="#"
-                class="rounded bg-green-700 px-6 py-3 font-semibold text-white"
-              >
-                Sign Up Now
-              </a>
+        <a
+          href="#"
+          class="rounded bg-green-700 px-6 py-3 font-semibold text-white"
+        >
+          Sign Up Now
+        </a>
 
-              <h4
-                class="mt-8 mb-4 text-xs font-semibold tracking-widest text-slate-700"
-              >
-                YOU GET PULSE BASICS, PLUS:
-              </h4>
-              <ul class="list- list-inside space-y-2 text-sm text-left">
-                <li>Manage cash flow across multiple financial accounts</li>
-                <li>
-                  Invite your investors, book keeper, or management team to see
-                  reports or manage cash flow
-                </li>
-                <li>
-                  Integrate with QuickBooks Online for more accurate cash flow
-                </li>
-                <li>
-                  Track your actual cash flow alongside your projected cash flow
-                </li>
-              </ul>
-            </article>
+        <h4
+          class="mt-8 mb-4 text-xs font-semibold tracking-widest text-slate-700"
+        >
+          YOU GET PULSE BASICS, PLUS:
+        </h4>
+        <ul class="list- list-inside space-y-2 text-sm text-left">
+          <li>Manage cash flow across multiple financial accounts</li>
+          <li>
+            Invite your investors, book keeper, or management team to see
+            reports or manage cash flow
+          </li>
+          <li>
+            Integrate with QuickBooks Online for more accurate cash flow
+          </li>
+          <li>
+            Track your actual cash flow alongside your projected cash flow
+          </li>
+        </ul>
+      </article>
 
-            <!-- Column 3: Unlock Extra Features -->
-            <article
-              class="flex flex-col items-center rounded-lg border border-slate-300 bg-white p-8 text-center"
-            >
-              <h3 class="text-xl font-bold text-green-700">
-                Unlock Extra Features
-              </h3>
-              <p class="mt-2 mb-6">
-                <span class="text-2xl font-semibold">$89</span>
-                <span class="text-sm text-slate-500">per month</span>
-              </p>
+      <!-- Column 3: Unlock Extra Features -->
+      <article
+        class="flex flex-col items-center rounded-lg border border-slate-300 bg-white p-8 text-center"
+      >
+        <h3 class="text-xl font-bold text-green-700">
+          Unlock Extra Features
+        </h3>
+        <p class="mt-2 mb-6">
+          <span class="text-2xl font-semibold">$89</span>
+          <span class="text-sm text-slate-500">per month</span>
+        </p>
 
-              <a
-                href="#"
-                class="rounde bg-green-700 px-6 py-3 font-semibold text-white"
-              >
-                Try Premium
-              </a>
+        <a
+          href="#"
+          class="rounde bg-green-700 px-6 py-3 font-semibold text-white"
+        >
+          Try Premium
+        </a>
 
-              <h4
-                class="mt-8 mb-4 text-xs font-semibold tracking-widest text-slate-700"
-              >
-                GET IT ALL, PLUS:
-              </h4>
-              <ul class="list-disc list-inside space-y-2 text-sm text-left">
-                <li>Manage cash flow across unlimited financial accounts</li>
-                <li>
-                  Convert to any currency for localized cash-flow reporting and
-                  projections
-                </li>
-                <li>
-                  Attach invoices or contracts to your cash-flow entries for
-                  accountability and auditing
-                </li>
-              </ul>
-            </article>
+        <h4
+          class="mt-8 mb-4 text-xs font-semibold tracking-widest text-slate-700"
+        >
+          GET IT ALL, PLUS:
+        </h4>
+        <ul class="list-disc list-inside space-y-2 text-sm text-left">
+          <li>Manage cash flow across unlimited financial accounts</li>
+          <li>
+            Convert to any currency for localized cash-flow reporting and
+            projections
+          </li>
+          <li>
+            Attach invoices or contracts to your cash-flow entries for
+            accountability and auditing
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Testimonial (optional, unter Grid) -->
+    <div class="mx-auto mt-20 max-w-2xl text-center">
+      <div class="mx-auto mb-6 h-16 w-16">
+        <!-- Ersetze src durch dein Logo-Asset -->
+        <img
+          src="https://pulseapp.com/img/subvert-avatar.png"
+          alt="Pulse logo"
+          class="h-full w-full object-contain"
+        />
+      </div>
+      <blockquote class="text-lg italic text-slate-700">
+        “Pulse is worth every penny because it empowers business owners
+        with critical financial insight and knowledge.”
+      </blockquote>
+      <cite
+        class="mt-4 block text-xs font-semibold uppercase tracking-widest text-green-700"
+      >
+        Subvert Marketing, Inc.
+      </cite>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <footer class="w-full fixed bottom-0 bg-black py-8">
+      <div class="flex flex-col md:flex-row justify-between items-start px-8">
+        <!-- Footer Logo -->
+        <div class="mb-4 md:mb-0">
+          <img
+            src="https://pulseapp.com/img/pulse-logo.svg"
+            alt="Pulse Logo"
+            class="h-10"
+          />
+        </div>
+
+        <!-- Sign up Button -->
+        <div class="mb-4 md:mb-0">
+          <button
+            class="bg-green-300 text-black font-semibold py-2 px-4 rounded"
+          >
+            Sign up for a Free 30-Day Trial
+          </button>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
+          <div>
+            <h3 class="font-semibold mb-2">Products</h3>
+            <ul>
+              <li>
+                <a href="#" class="text-green-300 hover:underline">Features</a>
+              </li>
+              <li>
+                <a href="#" class="text-green-300 hover:underline">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="text-green-300 hover:underline">Sign In</a>
+              </li>
+            </ul>
           </div>
 
-          <!-- Testimonial (optional, unter Grid) -->
-          <div class="mx-auto mt-20 max-w-2xl text-center">
-            <div class="mx-auto mb-6 h-16 w-16">
-              <!-- Ersetze src durch dein Logo-Asset -->
-              <img
-                src="https://pulseapp.com/img/subvert-avatar.png"
-                alt="Pulse logo"
-                class="h-full w-full object-contain"
-              />
-            </div>
-            <blockquote class="text-lg italic text-slate-700">
-              “Pulse is worth every penny because it empowers business owners
-              with critical financial insight and knowledge.”
-            </blockquote>
-            <cite
-              class="mt-4 block text-xs font-semibold uppercase tracking-widest text-green-700"
-            >
-              Subvert Marketing, Inc.
-            </cite>
+          <div>
+            <h3 class="font-semibold mb-2">Company</h3>
+            <ul>
+              <li>
+                <a href="#" class="text-green-300 hover:underline"
+                  >Customer Stories</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-green-300 hover:underline">About</a>
+              </li>
+              <li>
+                <a href="#" class="text-green-300 hover:underline">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-2">Resources</h3>
+            <ul>
+              <li>
+                <a href="#" class="text-green-300 hover:underline">Support</a>
+              </li>
+              <li>
+                <a href="#" class="text-green-300 hover:underline">Blog</a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
+</section>
+  
     </main>
 
     <footer></footer>
