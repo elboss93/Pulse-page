@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    
-    <script>
-    tailwind.config = {
-    theme: {
-      extend: {
-        fontFamily: {
-          sans: ['Inter', 'sans-serif'],
-        },
-        keyframes: {
-          fadeInUp: {
-            '0%': { opacity: '0', transform: 'translateY(20px)' },
-            '100%': { opacity: '1', transform: 'translateY(0)' },
-          }
-        },
-        animation: {
-          fadeInUp: 'fadeInUp 0.6s ease-out forwards',
-        }
-      }
-    }
-  }
-    </script>
-      
-    <title>Pulse page</title>
 
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            keyframes: {
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
+            animation: {
+              fadeInUp: "fadeInUp 0.6s ease-out forwards",
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Pulse page</title>
   </head>
 
   <body class="min-h-screen h-full w-full m-0 p-0 bg-white flex flex-col">
-
-    <header class="w-full bg-[#eafaf1] flex items-center justify-between py-10 px-6">
+    <header
+      class="w-full bg-[#eafaf1] flex items-center justify-between py-10 px-6"
+    >
       <div class="header-left">
         <img
           src="https://pulseapp.com/img/pulse-logo.svg"
@@ -45,8 +44,7 @@
         />
       </div>
       <div class="flex justify-between text-xl" class="header-right">
-
-  <button class="p-5">Features</button>
+        <button class="p-5">Features</button>
 
         <button class="p-5">customer Stories</button>
         <button class="p-5">Pircing</button>
@@ -55,56 +53,84 @@
       </div>
     </header>
 
-<main class="w-full grow">
+    <main class="w-full grow">
+      <section class="w-full bg-[#fcfcfc] py-16 px-4 sm:px-6 lg:px-8 font-sans">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-800 text-left mb-12">FAQ</h2>
 
-  <section class="w-full bg-[#fcfcfc] py-16 px-4 sm:px-6 lg:px-8 font-sans">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-gray-800 text-left mb-12">FAQ</h2>
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:grid-rows-3">
+            <div class="opacity-0 animate-fadeInUp">
+              <h3 class="text-lg font-semibold text-gray-900">
+                How does the 30-day free trial work?
+              </h3>
+              <p class="text-gray-600 mt-2">
+                You can use Pulse absolutely free for 30 days. After 30 days, we
+                will charge the credit card you used when you sign up. If you
+                choose to cancel your account before your trial ends, your card
+                will not be charged.
+              </p>
+            </div>
 
-      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:grid-rows-3">
-      
-      
-      <div class="opacity-0 animate-fadeInUp">
-        <h3 class="text-lg font-semibold text-gray-900">How does the 30-day free trial work?</h3>
-        <p class="text-gray-600 mt-2">You can use Pulse absolutely free for 30 days. After 30 days, we will charge the credit 
-          card you used when you sign up. If you choose to cancel your account before your trial ends, your card will not be 
-          charged.</p>
-      </div>
+            <div class="opacity-0 animate-fadeInUp [animation-delay:0.1s]">
+              <h3 class="text-lg font-semibold text-gray-900">
+                If I upgrade an existing account, do I get another free trial?
+              </h3>
+              <p class="text-gray-600 mt-2">
+                Brand new accounts are the only ones eligible for a 30-day free
+                trial. If you upgrade an existing account, your credit card will
+                be billed the new amount on the date of your next billing cycle.
+              </p>
+            </div>
 
-      <div class="opacity-0 animate-fadeInUp [animation-delay:0.1s]">
-        <h3 class="text-lg font-semibold text-gray-900">If I upgrade an existing account, do I get another free trial?</h3>
-        <p class="text-gray-600 mt-2">Brand new accounts are the only ones eligible for a 30-day free trial. If you upgrade 
-          an existing account, your credit card will be billed the new amount on the date of your next billing cycle.</p>
-      </div>
+            <div class="opacity-0 animate-fadeInUp [animation-delay:0.2s]">
+              <h3 class="text-lg font-semibold text-gray-900">
+                What is a “Financial Account”?
+              </h3>
+              <p class="text-gray-600 mt-2">
+                Financial Accounts are a grouping of income and expense items
+                that can be used for tracking or reporting purposes. They’re
+                designed to be flexible and can be used to differentiate between
+                bank accounts, companies, individuals or between personal and
+                business entries.
+              </p>
+            </div>
 
-      <div class="opacity-0 animate-fadeInUp [animation-delay:0.2s]">
-        <h3 class="text-lg font-semibold text-gray-900">What is a “Financial Account”?</h3>
-        <p class="text-gray-600 mt-2">Financial Accounts are a grouping of income and expense items that can be used for tracking 
-          or reporting purposes. They’re designed to be flexible and can be used to differentiate between bank accounts, companies, 
-          individuals or between personal and business entries.</p>
-      </div>
+            <div class="opacity-0 animate-fadeInUp [animation-delay:0.3s]">
+              <h3 class="text-lg font-semibold text-gray-900">
+                Do I have to commit to a long-term contract?
+              </h3>
+              <p class="text-gray-600 mt-2">
+                No. There is no contract when you use Pulse, other than agreeing
+                to our Terms of Service.
+              </p>
+            </div>
 
-      <div class="opacity-0 animate-fadeInUp [animation-delay:0.3s]">
-        <h3 class="text-lg font-semibold text-gray-900">Do I have to commit to a long-term contract?</h3>
-        <p class="text-gray-600 mt-2">No. There is no contract when you use Pulse, other than agreeing to our Terms of Service.</p>
-      </div>
+            <div class="opacity-0 animate-fadeInUp [animation-delay:0.4s]">
+              <h3 class="text-lg font-semibold text-gray-900">
+                Will I be able to cancel my account if I don’t use Pulse?
+              </h3>
+              <p class="text-gray-600 mt-2">
+                Yes – you can cancel your account at any time. To cancel your
+                account, go to your billing page and click on “Please cancel my
+                account” at the bottom of the page. The account owner is the
+                only one who can cancel an account. An email request to delete
+                an account is not considered cancellation.
+              </p>
+            </div>
 
-      <div class="opacity-0 animate-fadeInUp [animation-delay:0.4s]">
-        <h3 class="text-lg font-semibold text-gray-900">Will I be able to cancel my account if I don’t use Pulse?</h3>
-        <p class="text-gray-600 mt-2">Yes – you can cancel your account at any time. To cancel your account, go to your billing page and 
-          click on “Please cancel my account” at the bottom of the page. The account owner is the only one who can cancel an account. An email 
-          request to delete an account is not considered cancellation.</p>
-      </div>
-
-      <div class="opacity-0 animate-fadeInUp [animation-delay:0.5s]">
-        <h3 class="text-lg font-semibold text-gray-900">What types of payments do you accept?</h3>
-        <p class="text-gray-600 mt-2">We accept payments made online using Visa, Mastercard, Discover, and American Express.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-</main>
+            <div class="opacity-0 animate-fadeInUp [animation-delay:0.5s]">
+              <h3 class="text-lg font-semibold text-gray-900">
+                What types of payments do you accept?
+              </h3>
+              <p class="text-gray-600 mt-2">
+                We accept payments made online using Visa, Mastercard, Discover,
+                and American Express.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="w-full fixed bottom-0 bg-black py-8">
       <div class="flex flex-col md:flex-row justify-between items-start px-8">
@@ -125,12 +151,11 @@
             Sign up for a Free 30-Day Trial
           </button>
         </div>
-  
 
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
 
         <!-- Footer Links -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
