@@ -33,39 +33,59 @@
   </head>
   <body class="m-0 p-0 bg-white">
     <header>
+      <section
+        class="w-full flex flex-col lg:flex-row items-stretc justify-between py-6 px-6 bg-[#eafaf1]"
+      >
+        <!-- Logo -->
+        <div class="mb-4 lg:mb-0">
+          <a href="https://pulseapp.com/">
+            <img
+              src="https://pulseapp.com/img/pulse-logo.svg"
+              alt="Pulse Logo"
+              class="h-20"
+            />
+          </a>
+        </div>
 
-       <section  
-       class="w-full flex flex-col lg:flex-row items-stretc justify-between py-6 px-6 bg-[#eafaf1]">
-    <!-- Logo -->
-    <div class="mb-4 lg:mb-0"> 
-        <a href="https://pulseapp.com/">
-      <img 
-        src="https://pulseapp.com/img/pulse-logo.svg"
-        alt="Pulse Logo"
-        class="h-20"
-      />
-      </a>
-    </div>
-
-    <!-- Menu -->
-    <nav class="flex items-center flex-w# flex-col lg:flex-row lg:space-x-6 space-y-2 lg:space-y-0">
-      <a href="https://pulseapp.com/features" class="text-[#00ad6a] font-bold  text-2xl px-4 py-2 rounded hover:text-black transition-colors">Features</a>
-      <a href="https://pulseapp.com/customer-stories" class="text-[#00ad6a] font-bold  text-2xl px-4 py-2 rounded hover:text-black transition-colors">Customer Stories</a>
-      <a href="https://pulseapp.com/pricing" class="text-[#00ad6a] font-bold  text-2xl px-4 py-2 rounded hover:text-black transition-colors">Pricing</a>
-      <a href="https://pulseapp.com/blog" class="text-[#00ad6a] text-2xl font-bold px-4 py-2 rounded hover:text-black transition-colors">Blog</a>
-      <a href="https://signup.pulseapp.com/plus" class="text-[#00ad6a] text-2xl font-bold  px-4 py-2 rounded border-3  border-[#00ad6a] hover:text-black transition-colors
-            lg:inline-block ">Sign Up</a>
-    </nav>
+        <!-- Menu -->
+        <nav
+          class="flex items-center flex-w# flex-col lg:flex-row lg:space-x-6 space-y-2 lg:space-y-0"
+        >
+          <a
+            href="https://pulseapp.com/features"
+            class="text-[#00ad6a] font-bold text-2xl px-4 py-2 rounded hover:text-black transition-colors"
+            >Features</a
+          >
+          <a
+            href="https://pulseapp.com/customer-stories"
+            class="text-[#00ad6a] font-bold text-2xl px-4 py-2 rounded hover:text-black transition-colors"
+            >Customer Stories</a
+          >
+          <a
+            href="https://pulseapp.com/pricing"
+            class="text-[#00ad6a] font-bold text-2xl px-4 py-2 rounded hover:text-black transition-colors"
+            >Pricing</a
+          >
+          <a
+            href="https://pulseapp.com/blog"
+            class="text-[#00ad6a] text-2xl font-bold px-4 py-2 rounded hover:text-black transition-colors"
+            >Blog</a
+          >
+          <a
+            href="https://signup.pulseapp.com/plus"
+            class="text-[#00ad6a] text-2xl font-bold px-4 py-2 rounded border-3 border-[#00ad6a] hover:text-black transition-colors lg:inline-block"
+            >Sign Up</a
+          >
+        </nav>
       </section>
-<section class=" px-6 py-12  bg-[#eafaf1]">
-    <h1 class="text-6xl font-bold text-center mb-4">Try Pulse free for </h1>
-    <h2 class="font-bold text-6xl text-center mb-6"> 30 days </h2>
-    <p class="text-center max-w-xl mx-auto text-gray-800 text-xl">
-      See why Pulse is the best way to monitor your cash flow. Sign up for any plan and try Pulse absolutely free for 30 days.
-    </p>
-  </section>
-  
-
+      <section class="px-6 py-12 bg-[#eafaf1]">
+        <h1 class="text-6xl font-bold text-center mb-4">Try Pulse free for</h1>
+        <h2 class="font-bold text-6xl text-center mb-6">30 days</h2>
+        <p class="text-center max-w-xl mx-auto text-gray-800 text-xl">
+          See why Pulse is the best way to monitor your cash flow. Sign up for
+          any plan and try Pulse absolutely free for 30 days.
+        </p>
+      </section>
     </header>
 
     <main class="w-full grow">
@@ -73,7 +93,7 @@
       <section class="w-full bg-[#E8F8F4] py-20">
         <div class="mx-auto max-w-7xl px-4">
           <!-- 3-Spalten-Grid – auf Mobil 1 Spalte, ab md 3 -->
-          <div class=" grid gap-1 md:grid-cols-3">
+          <div class="grid gap-1 md:grid-cols-3">
             <!-- Column 1: Pulse Basics -->
             <article class="text-slate-900 leading-relaxed">
               <h3 class="text-green-700 mb-4 text-lg font-bold">
@@ -307,7 +327,7 @@
         <!-- Sign up Button -->
         <div class="mb-4 md:mb-0">
           <button
-            class="bg-green-300 text-black font-semibold py-2 px-4 rounded"
+            class="bg-green-400 text-black font-semibold py-2 px-4 rounded dark:hover:bg-green-200 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
           >
             Sign up for a Free 30-Day Trial
           </button>
@@ -324,13 +344,25 @@
             <h3 class="font-semibold mb-2">Products</h3>
             <ul>
               <li>
-                <a href="#" class="text-green-300 hover:underline">Features</a>
+                <a
+                  href="https://pulseapp.com/features"
+                  class="text-green-300 hover:underline"
+                  >Features</a
+                >
               </li>
               <li>
-                <a href="#" class="text-green-300 hover:underline">Pricing</a>
+                <a
+                  href="https://pulseapp.com/pricing"
+                  class="text-green-300 hover:underline"
+                  >Pricing</a
+                >
               </li>
               <li>
-                <a href="#" class="text-green-300 hover:underline">Sign In</a>
+                <a
+                  href="https://signup.pulseapp.com/"
+                  class="text-green-300 hover:underline"
+                  >Sign In</a
+                >
               </li>
             </ul>
           </div>
@@ -339,12 +371,18 @@
             <h3 class="font-semibold mb-2">Company</h3>
             <ul>
               <li>
-                <a href="#" class="text-green-300 hover:underline"
+                <a
+                  href="https://pulseapp.com/customer-stories"
+                  class="text-green-300 hover:underline"
                   >Customer Stories</a
                 >
               </li>
               <li>
-                <a href="#" class="text-green-300 hover:underline">About</a>
+                <a
+                  href="https://pulseapp.com/about"
+                  class="text-green-300 hover:underline"
+                  >About</a
+                >
               </li>
               <li>
                 <a href="#" class="text-green-300 hover:underline">Contact</a>
@@ -356,14 +394,29 @@
             <h3 class="font-semibold mb-2">Resources</h3>
             <ul>
               <li>
-                <a href="#" class="text-green-300 hover:underline">Support</a>
+                <a
+                  href="https://help.pulseapp.com/help"
+                  class="text-green-300 hover:underline"
+                  >Support</a
+                >
               </li>
               <li>
-                <a href="#" class="text-green-300 hover:underline">Blog</a>
+                <a
+                  href="https://pulseapp.com/blog"
+                  class="text-green-300 hover:underline"
+                  >Blog</a
+                >
               </li>
             </ul>
           </div>
         </div>
+      </div>
+      <div class="text-white text-xs opacity-40 m-0 p-10 line-clamp-4">
+        <p>
+          ©2019 Pulseapp.com, Inc. All Rights Reserved | Terms of Use | Privacy
+          Policy | EU Privacy Pulse is made by Simple Focus. We also make
+          Ballpark, Sifter, and Curated.
+        </p>
       </div>
     </footer>
   </body>
